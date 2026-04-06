@@ -26,11 +26,36 @@
         flex-direction:row;
         justify-content:space-between;
         align-items:center;
+        /* position:relative; */
+        /* z-index:1; */
     }
     header img:not(:first-child){
         /* aspect-ratio:1; */
         object-fit:cover;
         height:1.4rem;
+    }
+    .popup{
+        box-sizing:border-box;
+        position:fixed;
+        top:0;
+        right:0;
+        /* z-index: 1; */
+        width:60%;
+        outline:1px solid green;
+        height:100dvh;
+        background-color:white;
+        display:flex;
+        flex-direction:column;
+        gap:10%;
+        padding:1rem;
+    }
+    .cross{
+        display:flex;
+        justify-content: end;
+    }
+    .popup h2{
+        color:hsl(236, 13%, 42%);
+        font-weight: 400;
     }
     .image{
         background-image:url("./assets/images/image-web-3-mobile.jpg");
