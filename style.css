@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* Mobile */
 @media screen and (max-width: 73.0625em) {
+    *{
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+    }
     html,body{
         margin:0;
         padding:0;
@@ -19,6 +25,12 @@
         display:flex;
         flex-direction:row;
         justify-content:space-between;
+        align-items:center;
+    }
+    header img:not(:first-child){
+        /* aspect-ratio:1; */
+        object-fit:cover;
+        height:1.4rem;
     }
     .image{
         background-image:url("./assets/images/image-web-3-mobile.jpg");
@@ -32,11 +44,29 @@
         /* outline:1px solid red; */
         width:100%;
         box-sizing:border-box;
+        display:flex;
+        flex-direction:column;
+        gap:1.5rem;
+    }
+    main>div{
+        display:flex;
+        flex-direction: column;
+        gap:4rem;
+    }
+    .left_and_right{
+        display:flex;
+        flex-direction:column;
+        gap:4rem;
     }
     .left p{
         line-height:1.6;
         color:hsl(236, 13%, 42%);
-        font-weight:700;
+        font-weight:400;
+        
+    }
+    .left h1{
+        font-size:3rem;
+        line-height:1;
     }
     button{
         width:50%;
@@ -81,7 +111,7 @@
     }
     .trending>div>img{
         aspect-ratio:1;
-        width:35%;
+        width:30%;
         object-fit:cover;
     }
     .trending *{
@@ -89,11 +119,16 @@
     }
     .trending p{
         line-height: 1.6;
+        color:hsl(236, 13%, 42%);
+        font-weight:400;
     }
     .trending section{
         display:flex;
         flex-direction:column;
         gap:5%;
+    }
+    .trending h1{
+        color:hsl(5, 85%, 63%);
     }
 }
 
