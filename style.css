@@ -35,19 +35,28 @@
         height:1.4rem;
     }
     .popup{
-        box-sizing:border-box;
+        display: none;
+        flex-direction: row;
         position:fixed;
-        top:0;
-        right:0;
-        /* z-index: 1; */
-        width:60%;
-        outline:1px solid green;
+        top:0px;
+        left:0px;
+        width:100%;
         height:100dvh;
-        background-color:white;
+        /* border:1px solid red; */
+    }
+    .leftblack{
+        flex-basis:40%;
+        background-color:rgba(0, 0, 0, 0.7);
+    }
+    .rightdata{
+        flex-basis:60%;
+        background-color:hsl(36, 100%, 99%);
+        padding:2rem 1rem;
+        box-sizing:border-box;
         display:flex;
         flex-direction:column;
         gap:10%;
-        padding:1rem;
+
     }
     .cross{
         display:flex;
