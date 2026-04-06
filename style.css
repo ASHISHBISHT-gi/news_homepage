@@ -6,27 +6,95 @@
         /* width:100%; */
         box-sizing: border-box;
     }
+    p{
+        font-size:15px;
+        font-weight:700;
+    }
     body{
-        padding:0rem 1rem;
-    
+        padding:2rem 1rem;
+        width:100vw;
+        height:100dvh;
     }
     header{
         display:flex;
         flex-direction:row;
         justify-content:space-between;
     }
-    .web3{
-        content:url("./assets/images/image-web-3-mobile.jpg");
-        
+    .image{
+        background-image:url("./assets/images/image-web-3-mobile.jpg");
+        width:100%;
+        aspect-ratio:1;
+        background-size:cover;
     }
     main{
         margin:0;
-        padding:0;
-        outline:1px solid red;
-        /* width:100%; */
+        padding:0 0 20% 0;
+        /* outline:1px solid red; */
+        width:100%;
         box-sizing:border-box;
     }
-
+    .left p{
+        line-height:1.6;
+        color:hsl(236, 13%, 42%);
+        font-weight:700;
+    }
+    button{
+        width:50%;
+        height:3rem;
+        letter-spacing:30%;
+        font-weight:800;
+        background-color:hsl(5, 85%, 63%);
+        border:0;
+    }
+    h1{
+        font-weight:700;
+    }
+    .right{
+        background-color:hsl(240, 100%, 5%);
+        box-sizing:border-box;
+        padding:0.5rem 1.5rem;
+    }
+    .right>h1{
+        color:hsl(35, 77%, 62%);
+    }
+    .right>section:not(:last-child){
+        border-bottom:1px solid white;
+    }
+    .right>section>h3{
+        color:hsl(36, 100%, 99%);
+        font-weight: 700;
+    }
+    .right>section>p{
+        color:hsl(233, 8%, 79%);
+        line-height:1.6;
+    }
+    .trending{
+        display:flex;
+        flex-direction:column;
+        gap:2rem;
+    }
+    .trending>div{
+        display:flex;
+        flex-direction: row;
+        gap:10%;
+        /* justify-content:space-between; */
+    }
+    .trending>div>img{
+        aspect-ratio:1;
+        width:35%;
+        object-fit:cover;
+    }
+    .trending *{
+        margin:0;
+    }
+    .trending p{
+        line-height: 1.6;
+    }
+    .trending section{
+        display:flex;
+        flex-direction:column;
+        gap:5%;
+    }
 }
 
 
