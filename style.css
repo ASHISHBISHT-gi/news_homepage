@@ -1,0 +1,43 @@
+/* Mobile */
+@media screen and (max-width: 73.0625em) {
+    html,body{
+        margin:0;
+        padding:0;
+        /* width:100%; */
+        box-sizing: border-box;
+    }
+    body{
+        padding:0rem 1rem;
+    
+    }
+    header{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    .web3{
+        content:url("./assets/images/image-web-3-mobile.jpg");
+        
+    }
+    main{
+        margin:0;
+        padding:0;
+        outline:1px solid red;
+        /* width:100%; */
+        box-sizing:border-box;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* Desktop */
+@media screen and (min-width: 73.0625em) {
+    
+}
